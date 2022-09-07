@@ -1,17 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Main />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { defineComponent } from "vue";
+import Main from "./components/Main.vue";
 
-export default {
-  name: 'App',
+export default defineComponent({
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Main,
+  },
+});
 </script>
 
 <style>
@@ -21,6 +21,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
